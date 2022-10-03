@@ -1,0 +1,158 @@
+\documentclass[%singlesided,
+               doublesided,
+               paper=a4,
+               fontsize=10pt
+              ]{my-resume}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set geometry
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength\highlightwidth{8cm}
+\setlength\headerheight{4cm}            % note that margintop gets added to this value, i.e. the header bar is 5cm
+\setlength\marginleft{1cm}
+\setlength\marginright{\marginleft}      % needs to be 1.5 times to be actually equal. why?
+\setlength\margintop{1cm}
+\setlength\marginbottom{1cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FONTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{fontspec}
+\setmainfont{Carlito}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COLORS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\colorlet{highlightbarcolor}{lightgray}
+\colorlet{headerbarcolor}{darkgray}
+
+\colorlet{headerfontcolor}{white}
+\colorlet{accent}{awesome-red}
+\colorlet{heading}{black}
+\colorlet{emphasis}{black}
+\colorlet{body}{black}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\name{Vedant Tiwari}
+\tagline{ A passionate coder, State of the art writer, out of the box narrator \& magical achiever.}
+
+\photo[round]{Resume_Picture}{\dimexpr \headerheight-\marginbottom}   % make photo exactly match the header with margintop/marginright/marginbottom as margin
+
+\makeheader
+
+\highlightbar{
+
+    \section{Contact}
+    
+    \email{vedantwinner4@gmail.com}
+    \phone{+91 7041363776}
+    \location{C-101 Vraj Apatment, Kadi}
+    \vspace{0.5em}
+
+    \github{@intellectvedant}{https://github.com/intellectvedant}
+    \linkedin{Vedant Tiwari }{www.linkedin.com/in/intellectvedant}
+   
+    
+    \section{Skills}
+    
+    \skillsection{Programming}
+    \skill{Python}{4}
+    \skill{C}{3}
+    \skill{HTML/CSS}{4}
+    \skill{JavaScript}{3}
+    
+    \vspace{0.5em}
+    \skillsection{Operating Systems}
+    \skill{Windows}{5}
+    \skill{Linux}{3}
+    
+    \vspace{0.5em}
+    \skillsection{Languages}
+    \skill{English}{5}
+    \skill{Hindi}{5}
+    \skill{Gujarati}{4}
+    \bigskip
+    
+     \section{Education}
+\textbf{B.E Power Electronics} \\ (CGPA: 8.74) (CPI: 8.21) \\
+Vishwakarma Govt. Engineering College\\ 2019 - 2023 |  AHEMDABAD, India
+\vspace{0.5em}
+
+\textbf{HSC} (Percentile: 80 PR) \\
+ Kadi Sarva Vishwavidyalaya  \\
+2018 - 2019 | Kadi, India
+
+
+    
+    \bigskip
+    
+    \section{Certificates}
+    \simpleskill{IEEE - Data science & Big data : From Introduction to Application}
+    \simpleskill{Data Structure \& Algorithm}
+    \simpleskill{Coursera Javascipt Course}
+
+}
+\mainbar{
+    \section{Profile}
+    A multi-tasking engineer with a passion for creative writing & coding. Eloquent writer, programmer & power 
+electronics enthusiast. Experienced in making web development, IoT & interfacing projects.
+    
+    \section[\faGears]{Work history}
+    \job{JUNE 2022 – JULY 2022}
+        {PLASMA INDUCTION PVT. LTD. }
+        {R\&D INTERN }
+        {Worked on pic micro-controller programming & designing of SMPS circuitry - 
+        Designed the electrical heating \& melting designs for induction equipment. 
+         - Learned About testing PCB cards & panels in both heating & melting}
+
+    \section{Projects}
+    \achievement{SAHARA – A HELPING HAND FOR PEOPLE IN NEED}
+     \ul{·	Developed a centralized platform with web-based portal and an assistive support mobile app for storing and sharing of information about accessible places, catering all the specially-abled people.\newline} 
+\ul{·	The system would store the data of physical locations so that the information can be shown on an on-screen map. The information would contain data about the accessibility features & photographs and videos of such places.\newline}
+\ul{·	User side application is equipped with feature such as real time navigation, voice command based chatbot, assistive volunteer support, rating & review for the accessible facility by the users.}
+\newline
+
+\vspace{0.5em}
+    \achievement{MEDICAMENT VENDING MACHINE}
+  \ul{. Compact routine & dose based medicine dispensing machine with dose storing capacity of more than a week.\newline} 
+\ul{. Smart alert system for reminder of medicine schedule.\newline}
+\ul{. Web based platform linked database system to store the log of multiple medicine taken.}
+
+\vspace{0.5em}
+    \section{Achievements}
+    \smallskip % additional skip because tag outlines use up space
+    \tag{Participated \& got selected at institute level in Smart India Hackathon.}
+    \tag{Hosted The Annual Cultural Festival of SVKM for two consecutive years.}
+    \tag{Organized \& Coordinated sessions of Mission English VGEC chapter.}
+    \tag{Winner of National Environment Youth Parliament Interuniversity Level.}
+    
+    \section{Hobbies}
+    % This is taken from AltaCV
+    % see https://github.com/liantze/AltaCV for details
+    \wheelchart{1.5cm}{0.5cm}{% outer and inner diameter
+        6/8em/accent!20/Elocution,          % comma-separated list of
+        8/8em/accent!40/Psychology,    % fraction of 24 / line length / color / label
+        2/8em/accent!80/Cinematography,          % here, the color is shades of the accent color
+        3/8em/accent!60/Story-telling,
+        5/8em/accent/Philosophy
+    }
+}
+\makebody
+\clearpage
+
+
+
+\end{document}
